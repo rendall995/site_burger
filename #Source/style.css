@@ -1,0 +1,642 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+* body {
+  line-height: 1;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.page {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+[class*=__container] {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199.98px) {
+  [class*=__container] {
+    max-width: 970px;
+  }
+}
+@media (max-width: 990.98px) {
+  [class*=__container] {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767.98px) {
+  [class*=__container] {
+    max-width: none;
+    padding: 0 15px;
+  }
+}
+.button_style, .page .page__img .img__button, .header .header__container .header__button_1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.header {
+  border: 1px solid #D6D6D6;
+}
+.header .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 90px;
+  padding: 10px 0px;
+}
+.header .header__container .header__logo {
+  color: #01996D;
+  font-size: 30px;
+  padding: 30px 0px;
+  font-weight: bold;
+}
+.header .header__container .header__button_1 {
+  color: #FFFFFF;
+  background-color: #01996D;
+  max-width: 250px;
+  min-width: 190px;
+  max-height: 50px;
+  margin: 17px 0 0 0;
+  border-radius: 5px;
+}
+
+.menu .menu__item {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0px 26px;
+  padding: 30px 0px;
+}
+.menu .menu__item .menu__link {
+  color: #292929;
+}
+.menu .menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page .page__big-img {
+  max-width: 1920px;
+  height: 900px;
+  background-image: url(../img/Header__img-original.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.page .page__img {
+  max-width: 460px;
+  min-width: 150px;
+  min-height: 200px;
+  position: absolute;
+  margin: 15% 0 0 9%;
+}
+.page .page__img .img__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 74px;
+  color: #01996D;
+}
+.page .page__img .img__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #484848;
+  margin: 30px 0 0 0;
+}
+.page .page__img .img__button {
+  padding: 20px 50px;
+  max-width: 250px;
+  max-height: 60px;
+  background: #01996D;
+  border: 1px solid #01996D;
+  border-radius: 4px;
+  margin: 40px 0 0 0;
+  text-align: center;
+  color: #FFFFFF;
+}
+.page .how-it-works {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5% 0% 0% 0%;
+}
+.page .how-it-works__title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #424242;
+  margin: 10% 5% 0 10%;
+}
+.page .how-it-works__big-text {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  color: #01996D;
+  margin: -2% 8% 0 10%;
+  width: 40%;
+}
+.page .how-it-works__descriptions {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  margin: -2% 5% 0 0%;
+  width: 40%;
+}
+.page .block-rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 8% 10% 0 10%;
+  padding: 0 0;
+}
+.page .block-rows-01 {
+  width: 30%;
+  height: 1000px;
+}
+.page .block-rows-01__background {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 150%;
+  text-align: left;
+  color: rgba(1, 153, 109, 0.2);
+}
+.page .block-rows-01__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+  margin: -25.5% 0 0 0;
+}
+.page .block-rows-01__text {
+  width: 360px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424242;
+  padding: 25% 0 0 0;
+}
+.page .block-rows-01__img {
+  width: 360px;
+  height: 500px;
+  background: url("../img/row_01.jfif") no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  margin: 10% 0 0 0;
+}
+.page .block-rows-02 {
+  width: 30%;
+  height: 1000px;
+  margin: 22% 0 0 0;
+}
+.page .block-rows-02__background {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 150%;
+  text-align: left;
+  color: rgba(1, 153, 109, 0.2);
+}
+.page .block-rows-02__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  text-align: right;
+  color: #000000;
+  margin: -25.5% 0 0 0;
+}
+.page .block-rows-02__text {
+  width: 360px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424242;
+  padding: 25% 0 0 0;
+}
+.page .block-rows-02__img {
+  width: 360px;
+  height: 500px;
+  background: url("../img/row_02.png") no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  border-radius: 10px;
+  margin: 10% 0 0 0;
+}
+.page .block-rows-03 {
+  width: 30%;
+  height: 1000px;
+  margin: 5% 0 0 0;
+}
+.page .block-rows-03__background {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 150%;
+  text-align: left;
+  color: rgba(1, 153, 109, 0.2);
+}
+.page .block-rows-03__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+  margin: -25.5% 0 0 0;
+}
+.page .block-rows-03__text {
+  width: 380px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #424242;
+  padding: 25% 0 0 0;
+}
+.page .block-rows-03__img {
+  width: 360px;
+  height: 500px;
+  background: url("../img/row_03.jfif") no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  margin: 10% 0 0 0;
+}
+.page .green-block {
+  position: inherit;
+  width: 100%;
+  height: 922px;
+  background: #245852;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.page .block-green__left {
+  width: 40%;
+  height: 30%;
+  margin: 22% 2% 0 4%;
+}
+.page .left__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 157%;
+  color: #FFFFFF;
+}
+.page .left__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 157%;
+  color: #FFFFFF;
+  margin: 50px 0 0 0;
+}
+.page .left__button {
+  margin: 50px 0 0 0;
+}
+.page .left__button button {
+  width: 240px;
+  height: 65px;
+  text-align: center;
+  background: #01996D;
+  border-radius: 4px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.page .reight__video {
+  position: absolute;
+  width: 50%;
+  height: 55%;
+  border-radius: 16.3326px;
+  background: rgba(0, 0, 0, 0.2);
+  margin: 20% 0 0 0;
+}
+.page .our-product__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10% 0 0 0;
+}
+.page .item__img {
+  width: 450px;
+  height: 400px;
+  background: rgba(1, 153, 109, 0.2);
+  border-radius: 18px;
+  margin: 0 5%;
+  z-index: 1;
+}
+.page .item__img__womam {
+  position: inherit;
+  max-width: 300px;
+  max-height: 400px;
+  margin: 0 0 0 10%;
+  background-position: right;
+}
+.page .item__text {
+  width: 40%;
+  height: 20%;
+}
+.page .text__our-product {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 157%;
+  color: #424242;
+  margin: 0 0 5% 0;
+}
+.page .text__title {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 157%;
+  color: #01996D;
+  margin: 0 0 5% 0;
+}
+.page .text__text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #484848;
+  margin: 0 0 5% 0;
+}
+.page .text__button button {
+  width: 240px;
+  height: 65px;
+  text-align: center;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+  background-color: #01996D;
+  border-radius: 4px;
+}
+.page .block-profile {
+  position: relative;
+  width: 250px;
+  height: 220px;
+  border-radius: 3.5px;
+  background-color: #ffffff;
+  text-align: center;
+  margin: -12% 0 0 8%;
+  z-index: 2;
+  -webkit-box-shadow: 0 1px 5px black;
+          box-shadow: 0 1px 5px black;
+}
+.page .profile__title {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14.49px;
+  line-height: 157%;
+  width: 120px;
+  margin: 5% auto;
+  color: #000000;
+  border-bottom: 1px solid black;
+}
+.page .profile__img {
+  width: 30%;
+  height: 30%;
+  border-radius: 100px;
+  background-position: top;
+  background-color: rgba(1, 153, 109, 0.2);
+  margin: 5% auto;
+}
+.page .profile__img img {
+  width: 100%;
+  height: 100%;
+  background-size: auto auto;
+  border-radius: 100px;
+}
+.page .profile__img-name {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.9351px;
+  line-height: 157%;
+  text-align: center;
+  color: #000000;
+}
+.page .profile__text-bold {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.9292px;
+  line-height: 157%;
+  color: #000000;
+}
+.page .profile__list {
+  display: block;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11.9351px;
+  line-height: 157%;
+  text-align: left;
+  color: #000000;
+  margin: 5% 0 0 0;
+  padding: 0 0 0 14%;
+}
+.page .profile__list li:before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px 0 0;
+}
+
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #245852;
+  margin: 20% 0 0 0;
+}
+footer .foot__link {
+  color: #FFFFFF;
+}
+footer .footer {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0 0 0 10%;
+}
+footer .footer .footer__nav {
+  margin: 60px 0;
+}
+footer .footer .nav__logo {
+  font-family: "Avenir";
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 55px;
+  color: #ffffff;
+}
+footer .footer .nav__list {
+  color: #FFFFFF;
+}
+footer .footer .list__item {
+  color: #FFFFFF;
+  margin: 60px 0 0 0;
+}
+footer .footer .item__link {
+  display: block;
+  color: #FFFFFF;
+  padding: 20px 0;
+}
